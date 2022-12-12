@@ -147,6 +147,14 @@ namespace Queues_045
 
                             }
                             break;
+
+                        case '3':
+                            {
+                                queue.display();
+                            }
+                            break;
+
+                       
                     }
                 }
             }
