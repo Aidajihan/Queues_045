@@ -69,7 +69,20 @@ namespace Queues_045
                 if (FRONT == max - 1) 
                     FRONT = 0;
                 else
+                    /* FRONT is incremented by one if it is not the first element of array. */
+                    FRONT = FRONT + 1; 
 
+            }
+        }
+        public void display()
+        {
+            int FRONT_position = FRONT;
+            int REAR_position = REAR;  
+            /*checks if the queue is empty. */
+            if (FRONT == -1)
+            {
+                Console.WriteLine("Queue is empty\n");
+                return;;
             }
         }
         static void Main(string[] args)
