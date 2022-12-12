@@ -82,11 +82,60 @@ namespace Queues_045
             if (FRONT == -1)
             {
                 Console.WriteLine("Queue is empty\n");
-                return;;
+                return;
+            }
+            Console.WriteLine("\nElements in the queue are .......................\n");
+            if (FRONT_position <= REAR_position)
+            {
+                /* tranverses the queue till the last element present in an array. */
+                while (FRONT_position <= REAR_position)
+                {
+                    Console.Write(queue_array[FRONT_position] + "   ");
+                    FRONT_position++;
+                }
+                Console.WriteLine();
+            }
+            else
+            {
+                /* transverse the queue till the last position of the array. */
+                while (FRONT_position <= max - 1)
+                {
+                    Console.Write(queue_array[FRONT_position] + "     ");
+                    FRONT_position++;
+                }
+                /* set the FRONT position to the first element of the array. */
+                FRONT_position = 0;
+                /* traverse the array till the last element present in the queue. */
+                while (FRONT_position <= REAR_position)
+                {
+                    Console.Write(queue_array[FRONT_position] + "     ");
+                    FRONT_position++;
+                }
+                Console.WriteLine();
             }
         }
         static void Main(string[] args)
         {
+            Queue queue = new Queue();
+            char ch;
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("MENU");
+                    Console.WriteLine("1. Implement insert operation");
+                    Console.WriteLine("2. Implement delete operation");
+                    Console.WriteLine("3. Display values");
+                    Console.WriteLine("4. Exit");
+                    Console.WriteLine("\n Enter your choice (1-4) :    ");
+                    ch = Convert.ToChar(Console.Read());
+                    Console.WriteLine();
+                    switch (ch)
+                    {
+
+                    }
+                }
+            }
         }
     }
 }
