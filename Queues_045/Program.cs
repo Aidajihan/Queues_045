@@ -116,7 +116,7 @@ namespace Queues_045
         }
         static void Main(string[] args)
         {
-            Queue queue = new Queue();
+            Program queue = new Program();
             char ch;
             while (true)
             {
@@ -127,12 +127,26 @@ namespace Queues_045
                     Console.WriteLine("2. Implement delete operation");
                     Console.WriteLine("3. Display values");
                     Console.WriteLine("4. Exit");
-                    Console.WriteLine("\n Enter your choice (1-4) :    ");
+                    Console.Write("\n Enter your choice (1-4) :    ");
                     ch = Convert.ToChar(Console.Read());
                     Console.WriteLine();
                     switch (ch)
                     {
+                        case '1':
+                            {
+                                Console.Write("Enter a number:   ");
+                                int num = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                queue.insert(num);
+                            }
+                            break;
 
+                        case '2':
+                            {
+                                queue.remove();
+
+                            }
+                            break;
                     }
                 }
             }
