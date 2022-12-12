@@ -35,7 +35,8 @@ namespace Queues_045
             }
             else
             {
-                
+                /* if REAR is at the last  positions of the array, them the value of
+                 * REAR is set to 0 that corresponds to the first position of the array. */
             }
         }
         static void Main(string[] args)
