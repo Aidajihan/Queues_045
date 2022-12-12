@@ -49,7 +49,11 @@ namespace Queues_045
         }
         public void remove()
         {
+            /* Checks weather the queue is empty. */
+            if (FRONT == -1)
+            {
 
+            }
         }
         static void Main(string[] args)
         {
