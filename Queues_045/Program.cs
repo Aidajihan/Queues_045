@@ -37,7 +37,19 @@ namespace Queues_045
             {
                 /* if REAR is at the last  positions of the array, them the value of
                  * REAR is set to 0 that corresponds to the first position of the array. */
+                if (REAR == max - 1)
+                    REAR = 0;
+                else
+                    /* if REAR is not at the last position, them its value is incremented by one. */
+                    REAR = REAR + 1;
+
             }
+            /* Once the position of REAR is determined, the element is added at its proper place. */
+            queue_array[REAR] = element;
+        }
+        public void remove()
+        {
+
         }
         static void Main(string[] args)
         {
